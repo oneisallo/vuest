@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="count">0</h2>
+    <button class="increment">+1</button>
+    <button class="decrement">-1</button>
+<script>
+    const count = document.querySelector('.count')
+    const increment = document.querySelector('.increment')
+    const decrement = document.querySelector('.decrement')
+    let countNum = 100
+    count.innerHTML = countNum
+    increment.addEventListener('click', () => {
+        countNum++
+        count.innerHTML = countNum
+    })
+    decrement.addEventListener('click', () => {
+        countNum--
+        count.innerHTML = countNum
+    })
+</script>
+</body>
+</html>
